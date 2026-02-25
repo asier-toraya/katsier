@@ -1,17 +1,11 @@
-# Katsier Portfolio
+# Portfolio 2026
 
-Portfolio web estático inspirado en un diseño tipo sci-fi/UFO, con panel de perfil y desplegable de proyectos.
+Portfolio web estático, con panel de perfil, desplegable de proyectos y writeups.
 
 ## Stack
 - HTML
 - CSS
 - JavaScript (vanilla)
-
-## Funcionalidades
-- Home con fondo full-screen y tarjeta de perfil.
-- Botón `Projects` que abre/cierra un panel inferior con animación.
-- Cierre del desplegable al hacer click fuera, en `Close` o con `Esc`.
-- Layout responsive para desktop y móvil.
 
 ## Estructura
 - `index.html`: estructura principal de la página.
