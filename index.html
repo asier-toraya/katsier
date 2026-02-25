@@ -52,6 +52,7 @@
       <div class="profile-card__actions">
         <button class="outline-btn" id="projectsButton" type="button">Projects</button>
         <a class="outline-btn" href="https://github.com/asier-toraya" target="_blank" rel="noreferrer">Github</a>
+        <button class="outline-btn" id="writeupsButton" type="button">Write-Ups</button>
       </div>
     </section>
 
@@ -105,6 +106,49 @@
           <a href="https://github.com/asier-toraya/ip_calculator" target="_blank" rel="noreferrer">- Github</a>
         </article>
       </div>
+    </section>
+
+    <section class="writeups-drawer" id="writeupsDrawer" aria-hidden="true">
+      <div class="writeups-drawer__header">
+        <h2>WRITE UPS</h2>
+        <button class="close-btn close-btn--drawer" id="closeWriteupsButton" type="button">Close</button>
+      </div>
+
+      <div class="writeups-list" role="list">
+        <button class="writeup-link" type="button" data-writeup-id="placeholder-01">
+          <strong>Placeholder 01</strong>
+          <span>Future write-up summary placeholder.</span>
+        </button>
+        <button class="writeup-link" type="button" data-writeup-id="placeholder-02">
+          <strong>Placeholder 02</strong>
+          <span>Future write-up summary placeholder.</span>
+        </button>
+        <button class="writeup-link" type="button" data-writeup-id="placeholder-03">
+          <strong>Placeholder 03</strong>
+          <span>Future write-up summary placeholder.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="writeup-detail-sheet" id="writeupDetailSheet" aria-hidden="true">
+      <div class="projects-sheet__header">
+        <h2 id="writeupDetailLabel">WRITE UP</h2>
+        <button class="close-btn" id="closeWriteupDetailButton" type="button">Close</button>
+      </div>
+
+      <article class="writeup-detail-content">
+        <h3 id="writeupDetailTitle">Placeholder Write-Up Title</h3>
+        <p id="writeupDetailParagraphA">
+          Placeholder text. Add your custom write-up content for this entry.
+        </p>
+        <p id="writeupDetailParagraphB">
+          Placeholder text. You can replace this with technical notes, process, outcomes, or lessons learned.
+        </p>
+        <div class="writeup-detail-media">
+          <img id="writeupDetailImageA" src="./images/NyxGuardImageL.png" alt="Write-up placeholder visual A" />
+          <img id="writeupDetailImageB" src="./images/elastic.png" alt="Write-up placeholder visual B" />
+        </div>
+      </article>
     </section>
   </main>
 
