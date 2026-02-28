@@ -653,7 +653,7 @@ const initBackgroundParallax = () => {
       return;
     }
 
-    const maxOffset = coarsePointerQuery.matches ? 3 : 8;
+    const maxOffset = coarsePointerQuery.matches ? 4 : 8;
     const xRatio = clientX / window.innerWidth - 0.5;
     const yRatio = clientY / window.innerHeight - 0.5;
     targetX = clamp(xRatio * maxOffset * -1, -maxOffset, maxOffset);
@@ -662,9 +662,10 @@ const initBackgroundParallax = () => {
   };
 
   const handlePointerMove = (event) => {
-    if (event.pointerType !== "mouse" && event.pointerType !== "pen") {
-      return;
-    }
+    updateByPointer(event.clientX, event.clientY);
+  };
+
+  const handleMouseMove = (event) => {
     updateByPointer(event.clientX, event.clientY);
   };
 
@@ -673,7 +674,7 @@ const initBackgroundParallax = () => {
       return;
     }
 
-    const maxOffset = 2;
+    const maxOffset = 3;
     const maxScrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
     const progress = window.scrollY / maxScrollable;
     targetY = clamp((progress - 0.5) * maxOffset * 2, -maxOffset, maxOffset);
@@ -695,6 +696,7 @@ const initBackgroundParallax = () => {
   };
 
   window.addEventListener("pointermove", handlePointerMove, { passive: true });
+  window.addEventListener("mousemove", handleMouseMove, { passive: true });
   window.addEventListener("blur", resetParallax);
   document.addEventListener("pointerleave", resetParallax);
   window.addEventListener("scroll", handleScroll, { passive: true });
