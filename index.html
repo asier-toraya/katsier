@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Asier Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="./images/favicon-ufo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Space+Mono:wght@400;700&display=swap"
@@ -124,19 +125,8 @@
         <button class="close-btn close-btn--drawer" id="closeWriteupsButton" type="button">Close</button>
       </div>
 
-      <div class="writeups-list" role="list">
-        <button class="writeup-link" type="button" data-writeup-id="placeholder-01">
-          <strong>Placeholder 01</strong>
-          <span>Future write-up summary placeholder.</span>
-        </button>
-        <button class="writeup-link" type="button" data-writeup-id="placeholder-02">
-          <strong>Placeholder 02</strong>
-          <span>Future write-up summary placeholder.</span>
-        </button>
-        <button class="writeup-link" type="button" data-writeup-id="placeholder-03">
-          <strong>Placeholder 03</strong>
-          <span>Future write-up summary placeholder.</span>
-        </button>
+      <div class="writeups-list" id="writeupsList" role="list">
+        <p class="writeups-status" id="writeupsStatus">Loading write-ups...</p>
       </div>
     </section>
 
@@ -147,21 +137,24 @@
       </div>
 
       <article class="writeup-detail-content">
-        <h3 id="writeupDetailTitle">Placeholder Write-Up Title</h3>
-        <p id="writeupDetailParagraphA">
-          Placeholder text. Add your custom write-up content for this entry.
-        </p>
-        <p id="writeupDetailParagraphB">
-          Placeholder text. You can replace this with technical notes, process, outcomes, or lessons learned.
-        </p>
-        <div class="writeup-detail-media">
-          <img id="writeupDetailImageA" src="./images/NyxGuardImageL.png" alt="Write-up placeholder visual A" />
-          <img id="writeupDetailImageB" src="./images/elastic.png" alt="Write-up placeholder visual B" />
+        <div class="writeup-cover" id="writeupCover" hidden>
+          <img id="writeupCoverImage" src="" alt="" />
+        </div>
+        <h3 id="writeupDetailTitle">Write-up</h3>
+        <div class="writeup-markdown" id="writeupDetailMarkdown">
+          <p>Select a write-up to view details.</p>
+        </div>
+        <div class="writeup-detail-media" id="writeupDetailMedia">
+          <img id="writeupDetailImageA" src="" alt="" hidden />
+          <img id="writeupDetailImageB" src="" alt="" hidden />
         </div>
       </article>
     </section>
   </main>
 
+  <span class="site-watermark" aria-label="Site version">v1.0.0</span>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="./script.js"></script>
 </body>
 

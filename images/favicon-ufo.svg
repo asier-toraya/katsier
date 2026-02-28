@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9de5ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9de5ff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <polygon points="24,34 40,34 48,60 16,60" fill="url(#beam)" />
+  <ellipse cx="32" cy="34" rx="20" ry="8" fill="#9098a5" />
+  <ellipse cx="32" cy="31" rx="18" ry="6.5" fill="#b8c0cc" />
+  <ellipse cx="32" cy="26" rx="10" ry="7" fill="#78d7ff" />
+  <circle cx="24" cy="33" r="1.2" fill="#f4ff8d" />
+  <circle cx="32" cy="34" r="1.2" fill="#f4ff8d" />
+  <circle cx="40" cy="33" r="1.2" fill="#f4ff8d" />
+</svg>
